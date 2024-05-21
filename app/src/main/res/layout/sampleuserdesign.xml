@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/user"
+    app:civ_border_width="1dp"
+    android:id="@+id/userpic">
+
+</de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/userpic"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Isha Chaudhary"
+        android:textAllCaps="true"
+        android:textSize="15dp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/camra1"
+        android:layout_toRightOf="@id/username"
+        android:layout_marginLeft="75dp"
+        android:id="@+id/vidiocall">
+
+    </TextView>
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/baseline_local_phone_24"
+        android:layout_toRightOf="@+id/vidiocall"
+        android:layout_marginLeft="10dp" >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, How are you doing this time"
+        android:layout_below="@id/username"
+        android:layout_toRightOf="@id/userpic"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp"
+        android:textColor="@color/blue"
+        android:id="@+id/userlastmsg">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14/09/23"
+        android:textColor="@color/B1"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/userlastmsgdate">
+
+    </TextView>
+
+</RelativeLayout>

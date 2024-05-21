@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+    android:background="@color/blue_1">
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img_pback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_arrow_back_24">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="22dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/layout_4"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/user"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="0sp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <ImageView
+            android:id="@+id/img_changeprofile"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/img_profile"
+            android:layout_marginTop="-30dp"
+             android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/img_profile"
+            android:src="@drawable/camra1">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_pname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_profile"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="Hii,isha"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:fontFamily="cursive">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/icon_info"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@id/txt_pname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_info_24">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_pabouttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_pname"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/icon_info"
+            android:text="About"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_pabout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_pabouttext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/icon_info"
+            android:text="Busy Right Now, Not receiving"
+            android:textColor="@color/red"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_below="@+id/txt_pabouttext"
+            android:src="@drawable/baseline_create_24"
+            android:id="@+id/img_changeabout">
+
+        </ImageView>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Personal Info.."
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="5dp"
+            android:layout_weight="1">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Isha"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_weight="2"
+            android:id="@+id/txt_pname2">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="5dp"
+        android:layout_weight="1">
+
+    </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="isha@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_weight="2"
+            android:id="@+id/txt_pemail">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:layout_weight="1">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*****************"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_weight="2"
+            android:id="@+id/txt_ppassword">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Logout"
+    android:layout_gravity="end"
+    android:layout_marginRight="20dp"
+    android:id="@+id/btn_logout1">
+
+</Button>
+
+</LinearLayout>
